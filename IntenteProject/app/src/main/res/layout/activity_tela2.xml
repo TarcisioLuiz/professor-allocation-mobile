@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tela1Activity">
+    tools:context=".Tela2Activity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Primeira tela"
+        android:text="Tela de resposta"
         android:textStyle="bold"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@id/textView"/>
 
     <EditText
-        android:id="@+id/edMenssagem"
+        android:id="@+id/edResponse"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:ems="10"
@@ -41,7 +41,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
