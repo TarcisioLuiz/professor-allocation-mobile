@@ -20,7 +20,10 @@ public class Tela1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String valor = getIntent().getStringExtra(CustomAdapter.KEY);
+
         EditText mensagem = findViewById(R.id.edMenssagem);
+        mensagem.setText(valor);
         textView2 = findViewById(R.id.textView2);
 
         Button button = findViewById(R.id.button);

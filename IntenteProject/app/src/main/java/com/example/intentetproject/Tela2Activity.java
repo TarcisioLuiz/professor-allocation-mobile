@@ -19,13 +19,13 @@ public class Tela2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_tela2);
 
         EditText editText = findViewById(R.id.edResponse);
-        Button button =findViewById(R.id.button);
-        button.setOnClickListener(view -> {
-            Intent mensageiro = new Intent(this, Tela1Activity.class);
-            mensageiro.putExtra(RESPONSE_KEY, editText.getText().toString());
-            setResult(RESULT_CODE_SUCCESS, mensageiro);
-            finish();
-        });
+//        Button button =findViewById(R.id.button);
+//        button.setOnClickListener(view -> {
+//            Intent mensageiro = new Intent(this, Tela1Activity.class);
+//            mensageiro.putExtra(RESPONSE_KEY, editText.getText().toString());
+//            setResult(RESULT_CODE_SUCCESS, mensageiro);
+//            finish();
+//        });
 
         String mensagem = getIntent().getStringExtra(Tela1Activity.KEY);
 
